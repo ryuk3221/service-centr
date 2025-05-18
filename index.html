@@ -23,7 +23,15 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Услуги</a>
+                  <button class="header__nav-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M10 3H3V10H10V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 3H14V10H21V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 14H14V21H21V14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14H3V21H10V14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Услуги
+                  </button>
                 </li>
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#">Цены</a>
@@ -41,7 +49,7 @@
                 <span class="phone">+7 (499) 325-68-35</span>
                 <span class="text">Ежедневно с 6:00 до 23:00</span>
               </a>
-              <button>Обратная связь</button>
+              <button class="header__connect-btn">Обратная связь</button>
             </div>
           </div>
         </div>
@@ -50,8 +58,120 @@
 
     <main>
       <div class="banner">
-        
+        <div class="container">
+          <div class="banner__inner">
+            <div class="banner__content" style="background-image: url(src/images/home-banner.jpg);">
+              <h1 class="banner__title title">Ремонт электроники и техники в Сочи</h1>
+              <p class="banner__text">Ваша техника сломалась? Приедем, починим, вернём комфорт! Быстро, качественно, лучшие мастера Сочи.</p>
+              <a class="banner__link" href="#">
+                <span>Заказать</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- секция почему мы -->
+      <div class="why">
+        <div class="why__title title">Почему мы?</div>
+        <div class="container">
+          <div class="why__inner">
+            <div class="why__item">
+              <img src="src/images/why-img1.svg" alt="">
+              <div class="why__item-title">Ставим диагноз бесплатно</div>
+              <p class="why__item-text">Диагностика бесплатно даже в случае отказа от ремонта</p>
+            </div>
+            <div class="why__item">
+              <img src="src/images/why-img2.svg" alt="">
+              <div class="why__item-title">Говорим с вами на одном языке</div>
+              <p class="why__item-text">Мы доступно объясняем Вам, что именно неисправно, и показываем запчасти, которые заменили.</p>
+            </div>
+            <div class="why__item">
+              <img src="src/images/why-img3.svg" alt="">
+              <div class="why__item-title">Утром стулья - вечером деньги</div>
+              <p class="why__item-text">Никаких предоплат. Все работы оплачиваются по факту и только после согласования стоимости.</p>
+            </div>
+            <div class="why__item">
+              <img src="src/images/why-img4.svg" alt="">
+              <div class="why__item-title">Мы отвечаем за свою работу</div>
+              <p class="why__item-text">Поэтому на все виды ремонта предоставляем гарантию до 1 года.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-numbers">
+        <div class="about-numbers__title">О нас в цифрах</div>
+        <div class="container">
+          <div class="about-numbers__inner">
+            <div class="about-numbers__item">
+              <div class="about-numbers__item-title">2014</div>
+              <div class="about-numbers__item-text">Год открытия сервиса</div>
+            </div>
+            <div class="about-numbers__item">
+              <div class="about-numbers__item-title">35</div>
+              <div class="about-numbers__item-text">Лет опыта лучших мастеров</div>
+            </div>
+            <div class="about-numbers__item">
+              <div class="about-numbers__item-title">16851</div>
+              <div class="about-numbers__item-text">Выполненных ремонтов</div>
+            </div>
+            <div class="about-numbers__item">
+              <div class="about-numbers__item-title">100+</div>
+              <div class="about-numbers__item-text">Сотрудников в штате</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- секция как происходит работа -->
+      <div class="work">
+        <div class="work__title title">Схема работы</div>
+        <div class="container">
+          <div class="work__inner">
+            <div class="work__item">
+              <div class="number">1</div>
+              <div class="work__item-content">
+                <div class="work__item-title">Оставляете заявку</div>
+                <p class="work__item-text">Заполняете форму на сайте либо звоните нам.</p>
+              </div>
+            </div>
+            <div class="work__item">
+              <div class="number">2</div>
+              <div class="work__item-content">
+                <div class="work__item-title">Мастер выезжает на вызов</div>
+                <p class="work__item-text">После уточнения деталей к вам выезжает мастер.</p>
+              </div>
+            </div>
+            <div class="work__item">
+              <div class="number">3</div>
+              <div class="work__item-content">
+                <div class="work__item-title">Ремонт техники</div>
+                <p class="work__item-text">Специалист диагностирует поломку и устраняет ее</p>
+              </div>
+            </div>
+            <div class="work__item">
+              <div class="number">4</div>
+              <div class="work__item-content">
+                <div class="work__item-title">Оплата и выдача гарантии</div>
+                <p class="work__item-text">Оплачиваете работу мастера и вам выдается гарантия до 2 лет.</p>
+              </div>
+            </div>
+            <div class="work__item">
+              <div class="number">5</div>
+              <div class="work__item-content">
+                <div class="work__item-title">Приемка работы</div>
+                <p class="work__item-text">После выполнения работ проверяете исправность аппарата.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <script type="module" src="/src/js/main.js"></script>
