@@ -23,18 +23,7 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <button class="header__nav-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path d="M10 3H3V10H10V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M21 3H14V10H21V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M21 14H14V21H21V14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M10 14H3V21H10V14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Услуги
-                  </button>
-                </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Цены</a>
+                  <a class="header__nav-link" href="#">Услуги и цены</a>
                 </li>
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#">О компании</a>
@@ -104,8 +93,9 @@
         </div>
       </div>
 
+       <!-- секция "О нас в цифрах" -->
       <div class="about-numbers">
-        <div class="about-numbers__title">О нас в цифрах</div>
+        <div class="about-numbers__title title">О нас в цифрах</div>
         <div class="container">
           <div class="about-numbers__inner">
             <div class="about-numbers__item">
@@ -130,43 +120,94 @@
 
       <!-- секция как происходит работа -->
       <div class="work">
-        <div class="work__title title">Схема работы</div>
+        <div class="work__title title">Как проходит ремонт?</div>
         <div class="container">
-          <div class="work__inner">
-            <div class="work__item">
-              <div class="number">1</div>
-              <div class="work__item-content">
-                <div class="work__item-title">Оставляете заявку</div>
-                <p class="work__item-text">Заполняете форму на сайте либо звоните нам.</p>
-              </div>
+          <p class="work__text">
+            Профессиональный ремонт техники с полным спектром услуг, включая бесплатную курьерскую доставку. Если вы находитесь в Сочи, просто позвоните по номеру +7 (499) 325-68-35 – наш курьер оперативно заберет ваше устройство (смартфон, планшет, ноутбук) и доставит его в сервис. Удобный вам срок возврата отремонтированного гаджета вы определяете сами.
+          </p>
+          <ol>
+            <li><span>Бесплатная диагностика</span> – обязательный этап для точного определения неисправности.</li>
+            <li><span>Прозрачное ценообразование</span> – используем только оригинальные запчасти по ценам от производителя.</li>
+            <li>
+              <span>Гибкие условия обслуживания:</span>
+              <ul>
+                <li>Выезд мастера по всему Сочи (особенно удобно для крупной техники).</li>
+                <li>Бесплатный курьерский сервис.</li>
+                <li>Скидка на работы при оформлении заявки онлайн.</li>
+                <li>Ускоренный ремонт за небольшую доплату</li>
+              </ul>
+            </li>
+          </ol>
+          <p class="work__text">После завершения ремонта (дома или в мастерской) мы проводим контрольную диагностику и предоставляем гарантию, срок которой зависит от объема выполненных работ.</p>
+          <p class="work__text">
+            Не откладывайте ремонт! Если сервисный центр находится рядом – привозите устройства любых брендов сразу при обнаружении неполадки. В большинстве случаев гаджет <span>можно починить в тот же день</span> – просто выберите опцию срочного ремонта.
+          </p>
+        </div>
+      </div>
+
+      <div class="brands">
+        <div class="brands__title title">Ремонт любых брендов</div>
+        <div class="container">
+          <div class="brands__inner">
+            <div class="brands__item">
+              <img src="src/images/brands/miele.png" alt="" loading="lazy">
             </div>
-            <div class="work__item">
-              <div class="number">2</div>
-              <div class="work__item-content">
-                <div class="work__item-title">Мастер выезжает на вызов</div>
-                <p class="work__item-text">После уточнения деталей к вам выезжает мастер.</p>
-              </div>
+            <div class="brands__item">
+              <img src="src/images/brands/bosch.png" alt="" loading="lazy">
             </div>
-            <div class="work__item">
-              <div class="number">3</div>
-              <div class="work__item-content">
-                <div class="work__item-title">Ремонт техники</div>
-                <p class="work__item-text">Специалист диагностирует поломку и устраняет ее</p>
-              </div>
+            <div class="brands__item">
+              <img src="src/images/brands/acer.png" alt="" loading="lazy">
             </div>
-            <div class="work__item">
-              <div class="number">4</div>
-              <div class="work__item-content">
-                <div class="work__item-title">Оплата и выдача гарантии</div>
-                <p class="work__item-text">Оплачиваете работу мастера и вам выдается гарантия до 2 лет.</p>
-              </div>
+            <div class="brands__item">
+              <img src="src/images/brands/apple.png" alt="" loading="lazy">
             </div>
-            <div class="work__item">
-              <div class="number">5</div>
-              <div class="work__item-content">
-                <div class="work__item-title">Приемка работы</div>
-                <p class="work__item-text">После выполнения работ проверяете исправность аппарата.</p>
-              </div>
+            <div class="brands__item">
+              <img src="src/images/brands/asus.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/candy.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/canon.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/dell.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/dexp.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/electrolux.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/haier.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/honor.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/hp.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/htc.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/huawei.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/indesit.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/jbl.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/lenovo.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/lg.png" alt="" loading="lazy">
+            </div>
+            <div class="brands__item">
+              <img src="src/images/brands/philips.png" alt="" loading="lazy">
             </div>
           </div>
         </div>
