@@ -12,6 +12,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  padding-top: 68px;
 }
 
 .title {
@@ -29,6 +30,12 @@ body {
 
 .header {
   box-shadow: 0px 3px 9px 0px rgba(34, 60, 80, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: #fff;
 
   .header-top {
     padding: 15px 0;
@@ -66,15 +73,15 @@ body {
   &__connect-btn {
     padding: 8px 14px;
     color: #fff;
-    background-color: $secondary;
-    border: 1px solid $secondary;
+    background-color: $accent;
+    border: 1px solid $accent;
     border-radius: 4px;
     cursor: pointer;
     transition: .2s ease-in-out;
 
     &:hover {
       background-color: #fff;
-      color: $secondary;
+      color: $accent;
     }
   }
 
@@ -102,7 +109,7 @@ body {
       width: 8px;
 
       path {
-        fill: $secondary;
+        fill: $accent;
       }
     }
 
@@ -144,19 +151,36 @@ body {
 }
 
 .banner {
-  margin-top: 20px;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
 
   &__content {
-    height: 530px;
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
   }
 
   &__title {
-    padding-top: 100px;
+    padding-top: 175px;
     max-width: 600px;
     margin-bottom: 20px;
+    color: #fff;
   }
 
   &__text {
@@ -164,6 +188,7 @@ body {
     line-height: 25px;
     margin-bottom: 30px;
     max-width: 450px;
+    color: #fff;
   }
 
   &__link {
@@ -189,6 +214,21 @@ body {
     svg path {
       stroke: #fff;
       transition: .2s ease;
+    }
+  }
+}
+
+.banner1 {
+  background-attachment: fixed;
+  background-position: bottom;
+
+  &__title {
+    font-size: 80px !important;
+    line-height: 90px;
+    padding-top: 115px;
+
+    span {
+      
     }
   }
 }
@@ -442,11 +482,32 @@ body {
 
 .form {
   padding: 100px 0;
+  background-position: 48% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+
+  &--bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
 
   &__title {
     text-align: center;
     margin-bottom: 50px;
     font-size: 40px;
+    color: #fff;
   }
 
   &__inner {
@@ -468,6 +529,10 @@ body {
     &::placeholder {
       color: $light-gray
     }
+  }
+
+  .last-input {
+    grid-column-start: span 2;
   }
 
   &__btn {
@@ -494,6 +559,7 @@ body {
   &__text {
     font-size: 15px;
     text-align: center;
+    color: #fff;
 
     a {
       text-decoration: underline
@@ -545,6 +611,17 @@ body {
 .prices {
   padding: 70px 0;
 
+  button {
+    padding: 10px 15px;
+    background-color: $accent;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: .2s ease;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 50px;
@@ -587,13 +664,105 @@ body {
   &__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-bottom: 15px;
     border-bottom: 1px solid $light-gray;
 
     span {
       font-size: 20px;
     }
+  }
+
+  .prop {
+    margin-right: auto;
+  }
+}
+
+.recommend {
+  padding: 70px 0;
+
+  &__title {
+    margin-left: 150px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 55px;
+
+    span {
+      display: block;
+      margin-left: 150px;
+      color: $accent;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__img {
+    position: relative;
+    max-width: 400px;
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  
+  &__img--decor {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-color: #705ABF;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    max-width: 600px;
+    border-radius: 60px;
+    background-color: rgba(237, 237, 237, 0.45);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 25px;
+    margin-bottom: 40px;
+
+    svg {
+      width: 100px;
+    }
+
+    svg rect {
+      stroke: $accent !important;
+    }
+
+    svg path {
+      fill: $accent;
+    }
+  }
+
+  &__item:nth-child(2) {
+    margin-left: 50px;
+  }
+
+  &__item:nth-child(3) {
+    margin-left: 100px;
+  }
+
+  &__item-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-size: 18px;
   }
 }
 
