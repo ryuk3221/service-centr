@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Сервисный центр Сочи</title>
   </head>
   <body>
@@ -13,13 +14,7 @@
       <div class="header-top">
         <div class="container">
           <div class="header__inner">
-            <a class="header__logo" href="#">Logo</a>
-            <a class="header__geo" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
-              </svg>
-              <span>Сочи</span>
-            </a>
+            <a class="header__logo" href="/">Logo</a>
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
@@ -29,7 +24,7 @@
                   <a class="header__nav-link" href="#">О компании</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Контакты</a>
+                  <a class="header__nav-link" href="contacts.html">Контакты</a>
                 </li>
                 <li class="header__nav-item">
                   <a class="header__nav-link" href="#">Сроки ремонта</a>
@@ -52,19 +47,28 @@
     </header>
 
     <main>
-      <div class="banner" style="background-image: url(src/images/home-banner.jpg);">
+      <div class="banner" >
+        <div class="decor--img">
+          <div class="circle"></div>
+          <div class="circle1"></div>
+          <img src="src/images/banner-decor-img.png" alt="">
+        </div>
         <div class="banner--bg"></div>
-        <div class="container">
+        <!-- particles.js container --> 
+        <div id="particles-js"></div> 
+        <!-- stats - count particles --> 
+        <div class="count-particles">
+          <span class="js-count-particles">--</span>particles
+        </div> 
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+        я<div class="container">
           <div class="banner__inner">
             <div class="banner__content" >
               <h1 class="banner__title title">Ремонт электроники и техники в Сочи</h1>
               <p class="banner__text">Ваша техника сломалась? Приедем, починим, вернём комфорт! Быстро, качественно, лучшие мастера Сочи.</p>
-              <a class="banner__link" href="#">
-                <span>Заказать</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 5L19 12L12 19" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+              <a class="button" href="#form">
+                <span class="button-content">Заказать</span>
               </a>
             </div>
           </div>
@@ -86,7 +90,7 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
+            <a class="services__item" href="stiralnyye-mashiny.html">
               <img src="src/images/services/img2.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт стиральных машин</span>
@@ -97,7 +101,7 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
+            <a class="services__item" href="posud-mashins.html">
               <img src="src/images/services/img4.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт посудомоичных машин</span>
@@ -108,7 +112,7 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
+            <a class="services__item" href="coffee.html">
               <img src="src/images/services/img5.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт кофемашин</span>
@@ -119,8 +123,8 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
-              <img src="src/images/services/img6.jpg" alt="">
+            <a class="services__item" href="gladilnyye.html">
+              <img src="src/images/services/img6.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт гладильных установок</span>
                 <div class="icon">
@@ -130,7 +134,7 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
+            <a class="services__item" href="roboti-pilesosi.html">
               <img src="src/images/services/img7.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт  роботов пылесосов</span>
@@ -141,7 +145,7 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
+            <a class="services__item" href="tvs.html">
               <img src="src/images/services/img8.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт теливизоров</span>
@@ -152,7 +156,7 @@
                 </div>
               </div>
             </a>
-            <a class="services__item" href="">
+            <a class="services__item" href="notebook-pc.html">
               <img src="src/images/services/img9.png" alt="">
               <div class="services__item-bot">
                 <span>Ремонт ПК и ноутбуков</span>
@@ -258,6 +262,12 @@
       </div>
 
       <div class="brands">
+        <div class="brands--decor1">
+          <img src="src/images/decor1.png" alt="">
+        </div>
+        <div class="brands--decor2">
+          <svg version="1.1" preserveAspectRatio="none" viewBox="200 0 80 80" style="padding: 0px;"><defs><linearGradient id="gradient-uknbqqlsw3v1uifbn66z" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="rgb(255, 122, 0)" offset="0%"></stop><stop stop-color="rgb(255, 171, 0)" offset="100%"></stop></linearGradient></defs><path d="M240 80C262.091 80 280 62.0914 280 40C280 17.9086 262.091 0 240 0C217.909 0 200 17.9086 200 40C200 62.0914 217.909 80 240 80ZM240 65C253.807 65 265 53.8071 265 40C265 26.1929 253.807 15 240 15C226.193 15 215 26.1929 215 40C215 53.8071 226.193 65 240 65Z" fill-rule="evenodd" fill="url(#gradient-uknbqqlsw3v1uifbn66z)"></path></svg>
+        </div>
         <div class="brands__title title">Ремонт любых брендов</div>
         <div class="container">
           <div class="brands__inner">
@@ -325,6 +335,59 @@
         </div>
       </div>
 
+      <!-- отзывы -->
+      <div class="reviews" style="background-image: url(src/images/home-banner.jpg);">
+        <div class="reviews--bg"></div>
+        <div class="container">
+          <div class="reviews__title title"><span>Отзывы</span> о нашей работе</div>
+          <div class="reviews__inner">
+            <div class="swiper-wrapper">
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                  Пылесос Dyson у нас был не из дешевых, но он в конце концов перестал работать, но выбрасывать его было жалко, вызвали мастера из helpanu, т.к. нам его порекомендовали. Пылесос у нас забрали в день обращения, через пару дней нам его вернули уже отремонтированным. Все сделали, по деньгам получилось недорого, т.к. проблема была в копеечном предохранителе, а так бы пришлось новый тпылесос за бешеные деньги покупать.
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                  Последний раз обратился с ремонтом инфракрасного обогревателя. Всё починили быстро, качественно. Отличный сервис. Цены приятные, несколько раз уже ремонтировали бытовую технику из нашей квартиры, все довольны. Мастера хорошие.
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                  Ремонтом утюга я осталась дoвольна. Что-то не так было с режимами, приехала сюда(самый ближайший сервис по аналoгичному ремонту). Всё продиагностировали. Сделали ремонт на совесть, дали гарантию. Отличный способ вoсстановить утюг качественно и недорого
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                  Шуруповерт слoмался, только закончилась на него гарантия. Приценились, узнали где вообще такое делают и пoехали в мастерскую. Оказалась проблема с аккумулятoром, благо цена вопроса не заоблачная оказалась. Сделали все за пару дней, всё работает отлично. Впереди новый сезон, надеюсь не слoмается снова
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                  Ничего долговечного нет, вот и наш робот пылесос сломался. Знакомые недавно обращавшиеся с пoдобной ситуацией в этот сервис поделились контактами. Оставила заявку, к нам приехал курьер и все забрал, за выезд ничего не платили. После диагностики нам сказали что прoблема в моторе, подумала что теперь денег не хватит рассчитаться. Стоимoсть оказалась всего 350 рублей, зря переживала. Сделали нам его за пару дней, после чего дали гaрантию.
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                 Не дорого в оперативные сроки починили мой электро велосипед. Очень выручили, без него как без рук. Плавно едет, с тормозом теперь всё в порядке.
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                 Толковый специалист, свою работу знает, сразу понял в чем причина неисправности контролера. По сравнению с другими берет за свою работу в пределах разумного
+                </p>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                 Не было возможности привезти микроволновку на ремонт. Мастер проконсультировал онлайн. Благодаря чёткой и грамотной консультации, микроволновку удалось починить самостоятельно. Спасибо за помощь!!!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__pagination"></div>
+        </div>
+      </div>
+
       <!-- секция частые вопросы -->
       <div class="questions">
         <div class="questions__title title">Часто задаваемые вопросы</div>
@@ -388,7 +451,7 @@
       </div>
 
       <!-- секция форма обратной связи -->
-      <form class="form" action="" style="background-image: url(src/images/form--img.jpg);">
+      <form class="form"  id="form" action="" style="background-image: url(src/images/form--img.jpg);">
         <div class="form--bg"></div>
         <div class="container">
           <div class="form__title title">Остались вопросы? Мы вам перезвоним</div>
@@ -438,6 +501,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
