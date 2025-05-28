@@ -46,12 +46,12 @@
       </div>
     </header>
 
-    <main>
+    <main class="home-page">
       <div class="banner" >
         <div class="decor--img">
           <div class="circle"></div>
           <div class="circle1"></div>
-          <img src="src/images/banner-decor-img.png" alt="">
+          <img class="banner-img" src="src/images/banner-decor-img.png" alt="">
         </div>
         <div class="banner--bg"></div>
         <!-- particles.js container --> 
@@ -67,7 +67,7 @@
             <div class="banner__content" >
               <h1 class="banner__title title">Ремонт электроники и техники в Сочи</h1>
               <p class="banner__text">Ваша техника сломалась? Приедем, починим, вернём комфорт! Быстро, качественно, лучшие мастера Сочи.</p>
-              <a class="button" href="#form">
+              <a class="button banner-btn" href="#form">
                 <span class="button-content">Заказать</span>
               </a>
             </div>
@@ -212,7 +212,7 @@
       <!-- секция как происходит работа -->
       <div class="work">
         <div class="work__title1 title">Как проходит ремонт?</div>
-        <div class="container">
+        <div class="container work-container">
           <p class="work__text">
             Профессиональный ремонт техники с полным спектром услуг, включая бесплатную курьерскую доставку. Если вы находитесь в Сочи, просто позвоните по номеру +7 (499) 325-68-35 – наш курьер оперативно заберет ваше устройство (смартфон, планшет, ноутбук) и доставит его в сервис. Удобный вам срок возврата отремонтированного гаджета вы определяете сами.
           </p>
@@ -242,19 +242,19 @@
         <div class="container">
           <div class="about-numbers__inner">
             <div class="about-numbers__item">
-              <div class="about-numbers__item-title">2014</div>
+              <div class="about-numbers__item-title about-numbers1">0</div>
               <div class="about-numbers__item-text">Год открытия сервиса</div>
             </div>
             <div class="about-numbers__item">
-              <div class="about-numbers__item-title">35</div>
+              <div class="about-numbers__item-title about-numbers2">0</div>
               <div class="about-numbers__item-text">Лет опыта лучших мастеров</div>
             </div>
             <div class="about-numbers__item">
-              <div class="about-numbers__item-title">16851</div>
+              <div class="about-numbers__item-title about-numbers3">0</div>
               <div class="about-numbers__item-text">Выполненных ремонтов</div>
             </div>
             <div class="about-numbers__item">
-              <div class="about-numbers__item-title">100+</div>
+              <div class="about-numbers__item-title about-numbers4">0</div>
               <div class="about-numbers__item-text">Сотрудников в штате</div>
             </div>
           </div>
@@ -504,6 +504,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="src/js/animations.js"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
