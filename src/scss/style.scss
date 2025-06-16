@@ -96,12 +96,23 @@ body {
   }
 
   &__logo {
-    max-width: 120px;
+    max-width: 141px;
     flex-grow: 1;
     font-size: 30px;
     font-weight: 600;
     margin-right: 30px;
     line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 65px;
+    }
+  }
+
+  &__logo-text {
+    font-size: 16px;
   }
 
   &__geo {
@@ -365,49 +376,6 @@ body {
   background-color: #faf9f9;
   position: relative;
 
-  .why--decor1 {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -70px;
-    left: -70px;
-
-    svg path {
-      fill: $accent;
-    }
-  }
-
-  .glass {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    left: 0;
-    backdrop-filter: blur(2px);
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  .why--decor2 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    bottom: -100px;
-    right: -100px;
-
-    svg path {
-      fill: $accent;
-    }
-
-    .decor-img1 {
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-  }
-
   &__title {
     text-align: center;
     margin-bottom: 50px;
@@ -425,22 +393,27 @@ body {
     display: flex;
     flex-direction: column;
 
-    img {
-      width: 100px;
-      display: block;
-      margin: 0 auto 30px;
+    svg {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 20px;
+
+      path {
+        stroke: #705ABF;
+      }
     }
   }
 
   &__item-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &__item-text {
     text-align: center;
+    font-size: 15px;
   }
 }
 
@@ -586,7 +559,7 @@ body {
 }
 
 .services {
-  padding: 120px 0;
+  padding: 160px 0;
 
   &__title {
     margin-bottom: 50px;
@@ -594,7 +567,7 @@ body {
 
   &__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 30px;
   }
 
@@ -1254,13 +1227,7 @@ canvas {
     }
   }
 
-  &__textbox {
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0px 3px 9px 0px rgba(34, 60, 80, 0.2);
-    max-width: 600px;
-    margin-bottom: 50px;
-  }
+
 
   &__mail {
     display: block;
@@ -1272,6 +1239,10 @@ canvas {
   &__adress {
     font-size: 18px;
     margin-bottom: 20px;
+
+    span {
+      font-weight: 700;
+    }
   }
 
   .social {
